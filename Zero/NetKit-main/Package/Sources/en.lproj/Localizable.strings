@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  NetKit
+
+  Created by Ghadeer Elmahdy on 02/01/2025.
+  
+*/
+
+"General Error" = "An unexpected error has occurred.";
+"NoInternetError" = "You're offline, no internet connection.";

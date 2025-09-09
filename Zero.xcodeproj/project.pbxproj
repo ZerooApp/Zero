@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5288A8272E70CB8C006D89C4 /* NetKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5288A8262E70CB8C006D89C4 /* NetKit */; };
+		5288A82A2E70CC24006D89C4 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 5288A8292E70CC24006D89C4 /* SwiftMessages */; };
+		5288A82D2E70CC5D006D89C4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5288A82C2E70CC5D006D89C4 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5288A7BD2E70C9E1006D89C4 /* Zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5288A82D2E70CC5D006D89C4 /* SDWebImage in Frameworks */,
+				5288A82A2E70CC24006D89C4 /* SwiftMessages in Frameworks */,
+				5288A8272E70CB8C006D89C4 /* NetKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				5288A7BF2E70C9E1006D89C4 /* Zero */,
+				5288A8252E70CB8C006D89C4 /* Frameworks */,
 				5288A7BE2E70C9E1006D89C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +66,13 @@
 				5288A7BD2E70C9E1006D89C4 /* Zero.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5288A8252E70CB8C006D89C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +95,9 @@
 			);
 			name = Zero;
 			packageProductDependencies = (
+				5288A8262E70CB8C006D89C4 /* NetKit */,
+				5288A8292E70CC24006D89C4 /* SwiftMessages */,
+				5288A82C2E70CC5D006D89C4 /* SDWebImage */,
 			);
 			productName = Zero;
 			productReference = 5288A7BD2E70C9E1006D89C4 /* Zero.app */;
@@ -107,6 +127,10 @@
 			);
 			mainGroup = 5288A7B42E70C9E1006D89C4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5288A8282E70CC24006D89C4 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				5288A82B2E70CC5D006D89C4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5288A7BE2E70C9E1006D89C4 /* Products */;
 			projectDirPath = "";
@@ -151,8 +175,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,6 +185,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asereid.Zero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -179,8 +208,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +218,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asereid.Zero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,6 +369,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5288A8282E70CC24006D89C4 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.2;
+			};
+		};
+		5288A82B2E70CC5D006D89C4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5288A8262E70CB8C006D89C4 /* NetKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetKit;
+		};
+		5288A8292E70CC24006D89C4 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5288A8282E70CC24006D89C4 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		5288A82C2E70CC5D006D89C4 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5288A82B2E70CC5D006D89C4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5288A7B52E70C9E1006D89C4 /* Project object */;
 }
